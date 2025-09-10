@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strategic Plan Presentation</title>
+    <title>Strategic Plan Presentation (Responsive)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,25 +32,27 @@
 </head>
 <body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-4">
 
+    <!-- Main container for the presentation -->
     <div id="presentation-container" class="w-full max-w-4xl bg-white rounded-xl shadow-lg overflow-hidden">
-        <div class="p-8 sm:p-12 h-[600px] flex flex-col justify-center">
+        <!-- Slide content area with responsive padding and min-height -->
+        <div class="p-6 md:p-12 min-h-[500px] md:min-h-[600px] flex flex-col justify-center">
 
             <!-- Slide 1: Strategic Plan Summary -->
             <div id="slide-1" class="slide active">
                 <div class="slide-content">
-                    <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">Strategic Plan Summary</h1>
-                    <p class="text-lg text-gray-500 mb-8">Overview of the lead generation strategy.</p>
-                    <div class="space-y-4 text-gray-700">
-                        <p class="text-lg"><strong class="font-semibold text-gray-900">🎯 Main Goal:</strong> Generate 100 qualified leads per month.</p>
-                        <p class="text-lg"><strong class="font-semibold text-gray-900">💰 Total Media Budget:</strong> $1,500 / month.</p>
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-2">Strategic Plan Summary</h1>
+                    <p class="text-base sm:text-lg text-gray-500 mb-8">Overview of the lead generation strategy.</p>
+                    <div class="space-y-4 text-gray-700 text-sm sm:text-base">
+                        <p><strong class="font-semibold text-gray-900">🎯 Main Goal:</strong> Generate 100 qualified leads per month.</p>
+                        <p><strong class="font-semibold text-gray-900">💰 Total Media Budget:</strong> $1,500 / month.</p>
                         <div class="pl-4 border-l-2 border-indigo-500">
-                            <h3 class="font-semibold text-lg text-gray-900 mb-2">Budget Allocation:</h3>
+                            <h3 class="font-semibold text-base sm:text-lg text-gray-900 mb-2">Budget Allocation:</h3>
                             <ul class="list-disc list-inside space-y-2">
                                 <li><strong>Google Ads:</strong> $1,000 / month (Focus on capturing immediate demand).</li>
                                 <li><strong>Meta Ads (Facebook/Instagram):</strong> $500 / month (Focus on demand generation and niche audience reach).</li>
                             </ul>
                         </div>
-                        <p class="text-lg"><strong class="font-semibold text-gray-900">📈 Projected Leads:</strong> ~83 leads / month.</p>
+                        <p><strong class="font-semibold text-gray-900">📈 Projected Leads:</strong> ~83 leads / month.</p>
                         <div class="mt-6 p-4 bg-indigo-50 border border-indigo-200 rounded-lg">
                             <p class="font-semibold text-indigo-800">Strategic Note:</p>
                             <p class="text-indigo-700">The initial projection is 83 leads. Reaching the goal of 100 leads will be our optimization objective, aiming to lower the Cost Per Lead (CPL) or considering a budget adjustment after the initial learning phase.</p>
@@ -62,22 +64,22 @@
             <!-- Slide 2: Google Ads -->
             <div id="slide-2" class="slide">
                 <div class="slide-content">
-                    <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">Google Ads: Funnel & Strategy</h1>
-                    <p class="text-lg text-gray-500 mb-6">Focus on capturing high-intent customers.</p>
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-2">Google Ads: Funnel & Strategy</h1>
+                    <p class="text-base sm:text-lg text-gray-500 mb-6">Focus on capturing high-intent customers.</p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                        <div class="space-y-4">
+                        <div class="space-y-4 text-sm sm:text-base">
                             <p><strong class="font-semibold text-gray-900">Budget:</strong> $1,000 / month.</p>
                             <div>
                                 <h3 class="font-semibold text-gray-900 mb-2">Campaign Focus:</h3>
                                 <ul class="list-disc list-inside space-y-1 text-gray-700">
-                                    <li>Specialized Services (e.g., "car scratch repair," "auto paint shop near me").</li>
-                                    <li>Brand-Specific Repairs (e.g., "tesla certified body shop," "bmw collision center").</li>
+                                    <li>Specialized Services (e.g., "car scratch repair").</li>
+                                    <li>Brand-Specific Repairs (e.g., "tesla certified body shop").</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="text-center p-4 bg-gray-50 rounded-lg border">
-                             <h3 class="font-semibold text-gray-900 mb-4">Performance Funnel (Projection)</h3>
-                             <div class="space-y-2 text-sm font-mono text-gray-700">
+                             <h3 class="font-semibold text-gray-900 mb-4">Performance Funnel</h3>
+                             <div class="space-y-2 text-xs sm:text-sm font-mono text-gray-700">
                                  <div class="bg-white p-3 rounded-md shadow-sm border">
                                      <span class="font-bold text-indigo-600">$1,000</span> Investment
                                  </div>
@@ -87,10 +89,10 @@
                                  </div>
                                  <div class="flex justify-center text-gray-400">↓</div>
                                  <div class="bg-white p-3 rounded-md shadow-sm border">
-                                     ~<span class="font-bold text-indigo-600">63</span> Leads (13.5% Conversion Rate)
+                                     ~<span class="font-bold text-indigo-600">63</span> Leads (13.5% Conv. Rate)
                                  </div>
                                   <div class="mt-4 pt-3 border-t">
-                                     <p class="text-lg font-sans font-bold text-indigo-600">Projected CPL: ~$15.87</p>
+                                     <p class="text-base sm:text-lg font-sans font-bold text-indigo-600">Projected CPL: ~$15.87</p>
                                  </div>
                              </div>
                         </div>
@@ -101,19 +103,19 @@
             <!-- Slide 3: Meta Ads -->
             <div id="slide-3" class="slide">
                  <div class="slide-content">
-                    <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">Meta Ads: Funnel & Strategy</h1>
-                    <p class="text-lg text-gray-500 mb-6">Lead generation with controlled cost and visual appeal.</p>
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-2">Meta Ads: Funnel & Strategy</h1>
+                    <p class="text-base sm:text-lg text-gray-500 mb-6">Lead generation with controlled cost and visual appeal.</p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-                        <div class="space-y-4">
+                        <div class="space-y-4 text-sm sm:text-base">
                             <p><strong class="font-semibold text-gray-900">Budget:</strong> $500 / month.</p>
                             <div class="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
                                 <p class="font-semibold text-blue-800">Note on CPL:</p>
-                                <p class="text-blue-700 text-sm">The CPL goal under $25 is aggressive but achievable. The industry benchmark is higher, but recent data shows closer averages. We will set $25 as our optimization target, requiring high-quality creatives and precise targeting.</p>
+                                <p class="text-blue-700 text-sm">The CPL goal under $25 is aggressive but achievable. We will set $25 as our optimization target, requiring high-quality creatives and precise targeting.</p>
                             </div>
                         </div>
                         <div class="text-center p-4 bg-gray-50 rounded-lg border">
-                             <h3 class="font-semibold text-gray-900 mb-4">Performance Funnel (Projection)</h3>
-                             <div class="space-y-2 text-sm font-mono text-gray-700">
+                             <h3 class="font-semibold text-gray-900 mb-4">Performance Funnel</h3>
+                             <div class="space-y-2 text-xs sm:text-sm font-mono text-gray-700">
                                  <div class="bg-white p-3 rounded-md shadow-sm border">
                                      <span class="font-bold text-blue-600">$500</span> Investment
                                  </div>
@@ -122,7 +124,7 @@
                                      ~<span class="font-bold text-blue-600">20</span> Leads (Target CPL of $25)
                                  </div>
                                  <div class="mt-4 pt-3 border-t">
-                                     <p class="text-lg font-sans font-bold text-blue-600">Target CPL: $25</p>
+                                     <p class="text-base sm:text-lg font-sans font-bold text-blue-600">Target CPL: $25</p>
                                  </div>
                              </div>
                         </div>
@@ -133,29 +135,29 @@
             <!-- Slide 4: Recommendations -->
             <div id="slide-4" class="slide">
                  <div class="slide-content">
-                    <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">Recommendations & Next Steps</h1>
-                    <p class="text-lg text-gray-500 mb-8">Strategies to maximize results and for continuous optimization.</p>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="space-y-4">
-                           <h3 class="font-semibold text-xl text-gray-900 border-b-2 border-indigo-500 pb-2">Creative Strategy</h3>
-                           <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-2">Recommendations & Next Steps</h1>
+                    <p class="text-base sm:text-lg text-gray-500 mb-8">Strategies to maximize results and for continuous optimization.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 text-sm sm:text-base">
+                        <div class="space-y-3">
+                           <h3 class="font-semibold text-lg sm:text-xl text-gray-900 border-b-2 border-indigo-500 pb-2">Creative Strategy</h3>
+                           <ul class="list-disc list-inside space-y-2 text-gray-700 pt-2">
                                <li>Prioritize authentic "before-and-after" photos and videos.</li>
-                               <li>Create short videos showcasing the team, the shop, and customer testimonials to build trust.</li>
+                               <li>Create short videos showcasing the team, the shop, and testimonials.</li>
                            </ul>
                         </div>
-                        <div class="space-y-4">
-                           <h3 class="font-semibold text-xl text-gray-900 border-b-2 border-indigo-500 pb-2">Targeting Strategy (Meta Ads)</h3>
-                           <ul class="list-disc list-inside space-y-2 text-gray-700">
-                               <li><strong>Hyperlocal:</strong> Focus ads within a 10-15 mile (15-25 km) radius of the shop.</li>
-                               <li><strong>Interests:</strong> Target users with interests in specific car brands (Tesla, BMW, Mercedes).</li>
-                               <li><strong>High-Value Audiences:</strong> Create "Lookalike Audiences" from your list of best customers.</li>
+                        <div class="space-y-3">
+                           <h3 class="font-semibold text-lg sm:text-xl text-gray-900 border-b-2 border-indigo-500 pb-2">Targeting Strategy (Meta)</h3>
+                           <ul class="list-disc list-inside space-y-2 text-gray-700 pt-2">
+                               <li><strong>Hyperlocal:</strong> Focus ads within a 10-15 mile radius.</li>
+                               <li><strong>Interests:</strong> Target users interested in specific car brands.</li>
+                               <li><strong>High-Value:</strong> Create "Lookalike Audiences" from best customers.</li>
                            </ul>
                         </div>
-                         <div class="md:col-span-2 mt-4">
-                           <h3 class="font-semibold text-xl text-gray-900 border-b-2 border-indigo-500 pb-2">Continuous Optimization</h3>
-                           <ul class="list-disc list-inside space-y-2 text-gray-700">
-                               <li><strong>Phase 1 (Months 1-2):</strong> Launch campaigns and gather data to establish the account's actual CPL.</li>
-                               <li><strong>Phase 2 (Month 3+):</strong> Re-evaluate budgets based on performance. If Google Ads has a very low CPL, we can reallocate a portion of the Meta budget to scale what is already working.</li>
+                         <div class="md:col-span-2 mt-4 space-y-3">
+                           <h3 class="font-semibold text-lg sm:text-xl text-gray-900 border-b-2 border-indigo-500 pb-2">Continuous Optimization</h3>
+                           <ul class="list-disc list-inside space-y-2 text-gray-700 pt-2">
+                               <li><strong>Phase 1 (Months 1-2):</strong> Launch and gather data to establish actual CPL.</li>
+                               <li><strong>Phase 2 (Month 3+):</strong> Re-evaluate budgets. Reallocate from Meta to Google if CPL is very low to scale what works.</li>
                            </ul>
                         </div>
                     </div>
@@ -169,10 +171,10 @@
                 Slide <span id="current-slide">1</span> of <span id="total-slides">4</span>
             </div>
             <div class="flex space-x-2">
-                <button id="prev-btn" class="px-4 py-2 bg-white border border-gray-300 rounded-md text-gray-700 hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed">
+                <button id="prev-btn" class="px-4 py-2 text-sm sm:text-base bg-white border border-gray-300 rounded-md text-gray-700 hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed">
                     Previous
                 </button>
-                <button id="next-btn" class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed">
+                <button id="next-btn" class="px-4 py-2 text-sm sm:text-base bg-indigo-600 text-white rounded-md hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed">
                     Next
                 </button>
             </div>
@@ -215,8 +217,18 @@
                 }
             });
 
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if(e.key === 'ArrowRight') {
+                    nextBtn.click();
+                } else if (e.key === 'ArrowLeft') {
+                    prevBtn.click();
+                }
+            });
+
             updateSlides();
         });
     </script>
 </body>
 </html>
+
